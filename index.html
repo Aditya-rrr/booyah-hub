@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101018">
+<title>BOOYAH HUB — Free Fire Community</title>
+<style>
+:root{--bg:#0b0b12;--panel:#151521;--panel2:#1d1d2b;--text:#f5f5fa;--muted:#a7a7b8;--orange:#ff8a24;--yellow:#ffd166;--line:#2b2b3b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#38200f 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#0b0b12eF;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:1000;letter-spacing:1px;font-size:1.2rem}.brand span{color:var(--orange)}
+.links{display:flex;gap:20px;align-items:center;color:var(--muted);font-size:.9rem}.links a:hover{color:var(--yellow)}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 17px;background:linear-gradient(135deg,var(--orange),var(--yellow));color:#17100a;font-weight:900;cursor:pointer}
+.hero{padding:75px 0 55px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.tag{color:var(--yellow);font-weight:800;letter-spacing:2px;font-size:.75rem;text-transform:uppercase}
+h1{font-size:clamp(2.7rem,7vw,5.4rem);line-height:.98;margin:15px 0}h1 em{font-style:normal;color:var(--orange)}
+.lead{color:var(--muted);line-height:1.7;max-width:590px}.hero-card{min-height:310px;border:1px solid #65401f;border-radius:28px;padding:26px;background:linear-gradient(145deg,#342013,#171722 65%);display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 70px #0008}
+.big-icon{font-size:5rem}.hero-card strong{font-size:1.5rem}.hero-card p{color:#c8bdaf}
+section{padding:46px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:22px}h2{font-size:2rem;margin:0}.sub{color:var(--muted);margin:7px 0 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:21px}.card .icon{font-size:1.8rem}.card h3{margin:12px 0 7px}.card p{color:var(--muted);line-height:1.55;margin:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{padding:18px;border-radius:16px;background:#171722;border:1px solid var(--line)}.stat b{font-size:1.7rem;color:var(--yellow);display:block}.stat small{color:var(--muted)}
+.profile{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:7px;margin:12px 0}.field label{color:var(--muted);font-size:.9rem}.field input,.field select{background:#0d0d15;border:1px solid var(--line);border-radius:10px;padding:12px;color:var(--text);font:inherit}
+.preview{display:flex;flex-direction:column;justify-content:center;min-height:230px}.rank{font-size:2.4rem;color:var(--yellow);font-weight:1000}.hint{border-left:3px solid var(--orange);padding:10px 14px;background:#211a16;color:#d8c9b9;border-radius:0 10px 10px 0;margin-top:15px}
+.table{width:100%;border-collapse:collapse;margin-top:12px}.table td,.table th{text-align:left;padding:13px;border-bottom:1px solid var(--line)}.table th{color:var(--yellow)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.85rem}
+.notice{font-size:.82rem;color:var(--muted);margin-top:14px}
+@media(max-width:760px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:50px}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.profile{grid-template-columns:1fr}}
+@media(max-width:460px){.grid{grid-template-columns:1fr}.section-head{display:block}.section-head .btn{margin-top:14px}}
+</style>
+</head>
+<body>
+<header><nav class="wrap"><a class="brand" href="#home">BOOYAH<span>HUB</span></a><div class="links"><a href="#features">Features</a><a href="#profile">Player card</a><a href="#tournaments">Tournaments</a><a href="#tips">Tips</a></div><a class="btn" href="#profile">Build my card</a></nav></header>
+<main>
+<div class="wrap hero" id="home">
+<div><div class="tag">The battleground community</div><h1>DROP IN.<br><em>LEVEL UP.</em><br>BOOYAH!</h1><p class="lead">Your fan-made Free Fire hub for player cards, tournament updates, gameplay tips, rank goals and community highlights.</p><a class="btn" href="#features">Explore the hub →</a></div>
+<div class="hero-card"><div class="big-icon">🔥</div><div><div class="tag">Your next match starts here</div><strong>PLAY SMART. CLUTCH BIG.</strong><p>Build your player card and track your goals.</p></div></div>
+</div>
+<div class="wrap">
+<section id="features"><div class="section-head"><div><h2>Everything in one hub</h2><p class="sub">A quick launchpad for your gaming journey.</p></div></div>
+<div class="grid">
+<article class="card"><div class="icon">🎮</div><h3>Player profile</h3><p>Create a shareable player card with your nickname, UID, preferred mode and target rank.</p></article>
+<article class="card"><div class="icon">🏆</div><h3>Rank & stats</h3><p>Set personal goals for matches, wins and headshot practice. Sample stats are placeholders.</p></article>
+<article class="card"><div class="icon">⚔️</div><h3>Tournament board</h3><p>See a sample event schedule and keep track of community match plans.</p></article>
+<article class="card"><div class="icon">🎯</div><h3>Gameplay tips</h3><p>Find practice ideas for aim, movement, positioning and team communication.</p></article>
+<article class="card"><div class="icon">💎</div><h3>Items & diamonds</h3><p>Learn about in-game items and spend carefully through official game channels only.</p></article>
+<article class="card"><div class="icon">👥</div><h3>Community</h3><p>A friendly place to celebrate highlights, squad goals and fair-play gaming.</p></article>
+</div></section>
+<section id="profile"><div class="section-head"><div><h2>Player card builder</h2><p class="sub">Enter details locally to preview your card. Nothing is uploaded.</p></div></div>
+<div class="profile"><div class="card"><div class="field"><label for="nick">Player nickname</label><input id="nick" maxlength="18" placeholder="Your gaming name" oninput="updateCard()"></div><div class="field"><label for="uid">Player UID (optional)</label><input id="uid" inputmode="numeric" maxlength="20" placeholder="Enter UID" oninput="updateCard()"></div><div class="field"><label for="mode">Favourite mode</label><select id="mode" onchange="updateCard()"><option>Battle Royale</option><option>Clash Squad</option><option>Lone Wolf</option></select></div><div class="field"><label for="target">Target rank</label><select id="target" onchange="updateCard()"><option>Heroic</option><option>Master</option><option>Grandmaster</option><option>Platinum</option><option>Diamond</option></select></div><button class="btn" onclick="window.print()">Save / print card</button></div>
+<div class="card preview"><div class="tag">BOOYAH HUB · PLAYER</div><div class="rank" id="pRank">HEROIC</div><h2 id="pNick">Your nickname</h2><p id="pUid" class="sub">UID: not added</p><p id="pMode" class="sub">Favourite mode: Battle Royale</p><div class="hint">Keep improving. Play fair. Have fun.</div></div></div>
+</section>
+<section id="tournaments"><div class="section-head"><div><h2>Tournament board</h2><p class="sub">Example schedule — replace with your real event details.</p></div></div>
+<div class="card"><table class="table"><thead><tr><th>Event</th><th>Format</th><th>Status</th></tr></thead><tbody><tr><td>Weekend Showdown</td><td>Squad · BR</td><td>Coming soon</td></tr><tr><td>Clash Night</td><td>4v4 · CS</td><td>Coming soon</td></tr><tr><td>Solo Skill Challenge</td><td>Solo</td><td>Coming soon</td></tr></tbody></table><p class="notice">This is a demo board, not an official tournament registration service. No entries or payments are collected.</p></div>
+</section>
+<section id="tips"><div class="section-head"><div><h2>Level-up tips</h2><p class="sub">Build consistency with short, focused practice.</p></div></div>
+<div class="grid"><article class="card"><div class="icon">🎯</div><h3>Aim routine</h3><p>Warm up in training mode. Practise tracking and controlled bursts before ranked matches.</p></article><article class="card"><div class="icon">🧭</div><h3>Smart rotations</h3><p>Watch the safe zone, avoid unnecessary fights and move with cover whenever possible.</p></article><article class="card"><div class="icon">🤝</div><h3>Squad teamwork</h3><p>Share enemy locations, coordinate revives and agree on a landing plan.</p></article></div>
+<div class="hint">Sensitivity varies by device and personal control style. Start with comfortable settings and adjust gradually in training mode.</div>
+</section>
+<section><div class="card"><h2>Play safe. Stay legit.</h2><p class="sub">BOOYAH HUB is an independent fan-made demo and is not affiliated with or endorsed by Garena. It does not sell diamonds, provide top-ups, access player accounts, or promise free rewards. Never share passwords, OTPs or payment details.</p></div></section>
+</div>
+</main>
+<footer><div class="wrap">© 2026 BOOYAH HUB · Fan-made community demo · Not an official Garena website.</div></footer>
+<script>
+function updateCard(){
+ const nick=document.getElementById('nick').value.trim();
+ const uid=document.getElementById('uid').value.trim();
+ document.getElementById('pNick').textContent=nick||'Your nickname';
+ document.getElementById('pUid').textContent='UID: '+(uid||'not added');
+ document.getElementById('pMode').textContent='Favourite mode: '+document.getElementById('mode').value;
+ document.getElementById('pRank').textContent=document.getElementById('target').value.toUpperCase();
+}
+</script>
+</body></html>
