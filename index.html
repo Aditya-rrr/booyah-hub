@@ -13,7 +13,7 @@ nav{height:70px;display:flex;align-items:center;justify-content:space-between;ga
 .links{display:flex;gap:20px;align-items:center;color:var(--muted);font-size:.9rem}.links a:hover{color:var(--yellow)}
 .btn{display:inline-block;border:0;border-radius:12px;padding:12px 17px;background:linear-gradient(135deg,var(--orange),var(--yellow));color:#17100a;font-weight:900;cursor:pointer}
 .hero{padding:75px 0 55px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
-.tag{color:var(--yellow);font-weight:800;letter-spacing:2px;font-size:.75rem;text-transform:uppercase}
+.tag{color:var(--yellow);font-weight:800;letter-spacing:2px;font-size:.75rem;text-transform:uppercase}.creator-badge{display:inline-flex;align-items:center;gap:7px;margin-top:14px;padding:8px 13px;border:1px solid #65401f;border-radius:999px;background:linear-gradient(120deg,#25170f,#171722);color:#c8bdaf;font-size:.72rem;letter-spacing:1.8px;font-weight:800}.creator-badge strong{color:var(--yellow);font-size:.82rem;letter-spacing:2.5px;text-shadow:0 0 14px #ff8a2466}
 h1{font-size:clamp(2.7rem,7vw,5.4rem);line-height:.98;margin:15px 0}h1 em{font-style:normal;color:var(--orange)}
 .lead{color:var(--muted);line-height:1.7;max-width:590px}.hero-card{min-height:310px;border:1px solid #65401f;border-radius:28px;padding:26px;background:linear-gradient(145deg,#342013,#171722 65%);display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 70px #0008}
 .big-icon{font-size:5rem}.hero-card strong{font-size:1.5rem}.hero-card p{color:#c8bdaf}
@@ -33,7 +33,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 <header><nav class="wrap"><a class="brand" href="#home">BOOYAH<span>HUB</span></a><div class="links"><a href="#features">Features</a><a href="#profile">Player card</a><a href="#tournaments">Tournaments</a><a href="#tips">Tips</a></div><a class="btn" href="#profile">Build my card</a></nav></header>
 <main>
 <div class="wrap hero" id="home">
-<div><div class="tag">The battleground community</div><h1>DROP IN.<br><em>LEVEL UP.</em><br>BOOYAH!</h1><p class="lead">Your fan-made Free Fire hub for player cards, tournament updates, gameplay tips, rank goals and community highlights.</p><a class="btn" href="#features">Explore the hub →</a></div>
+<div><div class="tag">The battleground community</div><div class="creator-badge">✦ CREATED BY <strong>ADITYA BHASKAR</strong></div><h1>DROP IN.<br><em>LEVEL UP.</em><br>BOOYAH!</h1><p class="lead">Your fan-made Free Fire hub for player cards, tournament updates, gameplay tips, rank goals and community highlights.</p><a class="btn" href="#features">Explore the hub →</a></div>
 <div class="hero-card"><div class="big-icon">🔥</div><div><div class="tag">Your next match starts here</div><strong>PLAY SMART. CLUTCH BIG.</strong><p>Build your player card and track your goals.</p></div></div>
 </div>
 <div class="wrap">
@@ -60,7 +60,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 <section><div class="card"><h2>Play safe. Stay legit.</h2><p class="sub">BOOYAH HUB is an independent fan-made demo and is not affiliated with or endorsed by Garena. It does not sell diamonds, provide top-ups, access player accounts, or promise free rewards. Never share passwords, OTPs or payment details.</p></div></section>
 </div>
 </main>
-<footer><div class="wrap">© 2026 BOOYAH HUB · Fan-made community demo · Not an official Garena website.</div></footer>
+<footer><div class="wrap">© 2026 BOOYAH HUB · Crafted by <strong style="color:var(--yellow);letter-spacing:2px">ADITYA BHASKAR</strong> · Fan-made community demo · Not an official Garena website.</div></footer>
 <script>
 function updateCard(){
  const nick=document.getElementById('nick').value.trim();
