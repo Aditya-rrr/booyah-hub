@@ -71,4 +71,61 @@ function updateCard(){
  document.getElementById('pRank').textContent=document.getElementById('target').value.toUpperCase();
 }
 </script>
-</body></html>
+</body></html><section id="diamond-center">
+  <div class="card">
+    <div class="tag">💎 DIAMOND CENTER</div>
+    <h2>Get Diamonds</h2>
+    <p class="sub">Enter your player details</p>
+
+    <div class="field">
+      <label>Free Fire UID</label>
+      <input id="diamondUID" type="number" placeholder="Enter your UID">
+    </div>
+
+    <div class="field">
+      <label>Player Name</label>
+      <input id="diamondName" placeholder="Enter player name">
+    </div>
+
+    <div class="field">
+      <label>Select Diamonds</label>
+      <select id="diamondAmount">
+        <option value="100">100 Diamonds 💎</option>
+        <option value="500">500 Diamonds 💎</option>
+        <option value="1000">1000 Diamonds 💎</option>
+        <option value="5000">5000 Diamonds 💎</option>
+      </select>
+    </div>
+
+    <button class="btn" onclick="addDiamonds()">
+      GET DIAMONDS 💎
+    </button>
+
+    <h3 id="diamondBalance">💎 Balance: 0</h3>
+    <p id="diamondMessage"></p>
+  </div>
+</section>
+
+<script>
+let balance = 0;
+
+function addDiamonds() {
+  const uid = document.getElementById("diamondUID").value.trim();
+  const name = document.getElementById("diamondName").value.trim();
+  const amount = Number(document.getElementById("diamondAmount").value);
+
+  if (!uid || !name) {
+    alert("Please enter UID and Player Name!");
+    return;
+  }
+
+  balance += amount;
+
+  document.getElementById("diamondBalance").innerText =
+    "💎 Balance: " + balance;
+
+  document.getElementById("diamondMessage").innerText =
+    "✅ Demo Diamonds Added Successfully!";
+
+}
+</script>
